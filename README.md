@@ -14,17 +14,23 @@ Crie e configure o Dockerfile para que seja possível criar a imagem e executar 
 
 No terminal de comando realize as seguintes operações para criar a imagem:
 
-```docker build -t chatbot_gpt```
+```bash
+docker build -t chatbot_gpt
+```
 
 Para visualizar se a imagem foi criada corretamente:
 
-```docker images```
+```bash
+docker images
+```
 
 ## Rodando o container docker.
 
 Rode o container para verificar se está funcionando como o esperado:
 
-```docker run -it chatbot_gpt```
+```bash
+docker run -it chatbot_gpt
+```
 
 ## Instalação do AZURE CLI
 
@@ -46,15 +52,21 @@ Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de log
 
 - Retorne ao prompt de comando para realizar a conexão com a azure com a ajuda do Azure CLI instalado anteriormente. Coloque o nome da imagem e o Logon server.
 
-```docker tag NomeSUAImagem LogonServer/NomeSUAImagem:latest```
+```bash
+docker tag NomeSUAImagem LogonServer/NomeSUAImagem:latest
+```
 
 - Para visualizar a nova imagem criada.
 
-```docker images``` 
+```bash
+docker images
+``` 
 
 - Realizar login na Azure com a ajuda do Azure CLI instalado anteriormente, cole o Logon serve novamente.
 
-```docker login LogonServer```
+```bash
+docker login LogonServer
+```
 
 - Após isso irá solicitar o usuário e a senha, essas informações podem ser obtidas indo em **Chaves de acesso**.
 
@@ -62,7 +74,9 @@ Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de log
 
 - Enviar a imagem para a cloud Azure.
 
-```docker push NomeNOVAImagem:latest```
+```bash
+docker push NomeNOVAImagem:latest
+```
 
 - Procure por **Repositórios** e verifique se sua imagem está lá.
 
