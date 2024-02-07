@@ -83,22 +83,22 @@ docker push NomeNOVAImagem:latest
 ![Repositórios](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Reposit%C3%B3rios.png)
 
 
-## Aplicativo de Container
+## Aplicativo de Container.
 
 As seguintes configurações são necessárias para a criação correta do recurso:
 
 1. Página de **Contêiner**:
 
-- Desmarcar **Usar imagem de início rápido**
-- Preencher os seguintes campos de **Detalhes do contêiner**
+- Desmarcar **Usar imagem de início rápido**.
+- Preencher os seguintes campos de **Detalhes do contêiner**.
   
 ![Container app ](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app.png)
 
-2. Página de **Entrada**
+2. Página de **Entrada**.
 
-- Habilitar **Ingresso**
-- Selecionar **Aceitando tráfego de qualquer lugar**
-- em **Porta de destino** colocar 8501
+- Habilitar **Ingresso**.
+- Selecionar **Aceitando tráfego de qualquer lugar**.
+- em **Porta de destino** colocar 8501.
 
 ![Container app ](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app2.png)
 
@@ -106,7 +106,7 @@ As seguintes configurações são necessárias para a criação correta do recur
 
 ![Container app 3](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app3.png)
 
-4. Na página inicial do seu recurso, selecione **URL do aplicativo**
+4. Na página inicial do seu recurso, selecione **URL do aplicativo**.
 
 ![Url do app](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/url_app.png)
 
