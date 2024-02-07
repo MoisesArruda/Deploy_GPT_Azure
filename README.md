@@ -8,7 +8,7 @@ Como forma de representação, pode utilizar o link abaixo para acessar o reposi
 
 Crie e configure o Dockerfile para que seja possível criar a imagem e executar o container.
 
-![DockerFile](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app.png)
+![DockerFile](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/DockerFile.png)
 
 ## Criando sua imagem docker.
 
@@ -36,13 +36,13 @@ Será necessário utilizar a interface de linha de comando do Azure para criar e
 
 Faça a criação do recurso de Registro de Container na Azure, a configuração não possui nenhum detalhe que necessite ser alterado, apenas prossiga.
 
-![Container Registry](imgs\Container_registry.png)
+![Container Registry](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_registry.png)
 
 ## Registrar sua imagem
 
 Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de logon** para utilizar futuramente.
 
-![Servidor logon](imgs\servidor_Logon.png)
+![Servidor logon](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/servidor_Logon.png)
 
 - Retorne ao prompt de comando para realizar a conexão com a azure com a ajuda do Azure CLI instalado anteriormente. Coloque o nome da imagem e o Logon server.
 
@@ -58,7 +58,7 @@ Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de log
 
 - Após isso irá solicitar o usuário e a senha, essas informações podem ser obtidas indo em **Chaves de acesso**.
 
-![Azure logon](imgs\docker_login.png)
+![Azure logon](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/docker%20login.png)
 
 - Enviar a imagem para a cloud Azure.
 
@@ -66,7 +66,7 @@ Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de log
 
 - Procure por **Repositórios** e verifique se sua imagem está lá.
 
-![Repositórios](imgs\Repositórios.png)
+![Repositórios](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Reposit%C3%B3rios.png)
 
 
 ## Aplicativo de Container
@@ -78,7 +78,7 @@ As seguintes configurações são necessárias para a criação correta do recur
 - Desmarcar **Usar imagem de início rápido**
 - Preencher os seguintes campos de **Detalhes do contêiner**
   
-![Container app ](imgs\Container_app.png)
+![Container app ](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app.pngg)
 
 2. Página de **Entrada**
 
@@ -86,18 +86,18 @@ As seguintes configurações são necessárias para a criação correta do recur
 - Selecionar **Aceitando tráfego de qualquer lugar**
 - em **Porta de destino** colocar 8501
 
-![Container app ](imgs\Container_app2.png)
+![Container app ](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app2.png)
 
 3.   Recurso criado.
 
-![Container app 3](imgs\Container_app3.png)
+![Container app 3](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app3.png)
 
 4. Na página inicial do seu recurso, selecione **URL do aplicativo**
 
-![Url do app](imgs\url_app.png)
+![Url do app](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/url_app.png)
 
 
 Aplicação implementada com êxito.
 
-![Chatbot GPT](imgs\Gpt_streamlit.png)
+![Chatbot GPT](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Gpt_streamlit.png)
 
