@@ -1,26 +1,24 @@
 <h1 align="center"> Fazendo deploy da sua solução GPT na Azure. </h1>
 Este repositório tem o objetivo de compartilhar a implementação de uma solução utilizando um modelo de LLM na cloud Azure.
-Como forma de representação, pode utilizar o link abaixo para acessar o repositório que contém uma solução para realizar os passos seguintes.
+Como forma de representação, pode utilizar o link abaixo para acessar o repositório que contém uma solução desenvolvida para realizar os passos seguintes.
 
 [Acesso aqui o repositório. 📁](https://github.com/MoisesArruda/GPT_Streamlit_FAISS)
 
 ## DockerFile
 
-Faça a criação e a configuração do seu Dockerfile para que seja possível criar sua imagem e executar seu container.
+Crie e configure o Dockerfile para que seja possível criar a imagem e executar o container.
 
-![DockerFile](https://github.com/MoisesArruda/Deploy_GPT_Azure/assets/107249412/36d732dc-5ea8-44ef-8a84-d0120001b2f7)
+![DockerFile](imgs\DockerFile.png)
 
 ## Criando sua imagem docker.
 
-No terminal de comando faça as seguintes operações para criar sua imagem:
+No terminal de comando realize as seguintes operações para criar a imagem:
 
 ```docker build -t chatbot_gpt```
 
-Para visualizar se sua imagem foi criada corretamente:
+Para visualizar se a imagem foi criada corretamente:
 
 ```docker images```
-
-![Docker images]()
 
 ## Rodando o container docker.
 
@@ -30,45 +28,45 @@ Rode o container para verificar se está funcionando como o esperado:
 
 ## Instalação do AZURE CLI
 
-Iremos utilizar a interface de linha de comando do Azure para criar e gerenciar recursos do Azure.
+Será necessário utilizar a interface de linha de comando do Azure para criar e gerenciar recursos do Azure.
 
 [Link para download.](https://learn.microsoft.com/pt-br/cli/azure/)
 
 ## Registros de Container no Azure
 
-Faça a criação do seu recurso de Registro de Container na Azure, a configuração não possui nenhum ponto de atenção.
+Faça a criação do recurso de Registro de Container na Azure, a configuração não possui nenhum detalhe que necessite ser alterado, apenas prossiga.
 
-![Container Registry]()
+![Container Registry](imgs\Container_registry.png)
 
 ## Registrar sua imagem
 
-Com o recurso já criado e em sua tela inicial, vamos copiar o **servidor de logon** para utilizar futuramente.
+Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de logon** para utilizar futuramente.
 
-![Servidor logon]()
+![Servidor logon](imgs\servidor_Logon.png)
 
-Retorne ao prompt de comando para realizar a conexão com a azure com a ajuda do Azure CLI instalado anteriormente. Coloque o nome da sua imagem e o Logon server.
+- Retorne ao prompt de comando para realizar a conexão com a azure com a ajuda do Azure CLI instalado anteriormente. Coloque o nome da imagem e o Logon server.
 
 ```docker tag *NomeSUAImagem* *LogonServer*/*NomeSUAImagem*:latest```
 
-Para visualizar a nova imagem criada.
+- Para visualizar a nova imagem criada.
 
 ```docker images``` 
 
-Realizar login na Azure com a ajuda do Azure CLI instalado anteriormente.
+- Realizar login na Azure com a ajuda do Azure CLI instalado anteriormente.
 
 ```docker login *LogonServer*```
 
-Após isso ele vai pedir o usuário e a senha, essas informações podem ser obtidas indo em **Chaves de acesso**.
+- Após isso irá solicitar o usuário e a senha, essas informações podem ser obtidas indo em **Chaves de acesso**.
 
-![Azure logon]()
+![Azure logon](imgs\docker_login.png)
 
-Enviar sua imagem para a cloud Azure.
+- Enviar a imagem para a cloud Azure.
 
 ```docker push *NomeNOVAImagem*:latest```
 
-Procure por **Repositórios** e verifique se sua imagem está lá.
+- Procure por **Repositórios** e verifique se sua imagem está lá.
 
-![Repositórios]()
+![Repositórios](imgs\Repositórios.png)
 
 
 ## Aplicativo de Container
@@ -80,7 +78,7 @@ As seguintes configurações são necessárias para a criação correta do recur
 - Desmarcar **Usar imagem de início rápido**
 - Preencher os seguintes campos de **Detalhes do contêiner**
   
-![Container app ]()
+![Container app ](imgs\Container_app.png)
 
 2. Página de **Entrada**
 
@@ -88,8 +86,18 @@ As seguintes configurações são necessárias para a criação correta do recur
 - Selecionar **Aceitando tráfego de qualquer lugar**
 - em **Porta de destino** colocar 8501
 
-![Container app ]()
+![Container app ](imgs\Container_app2.png)
 
-3. Recurso criado.
+3.   Recurso criado.
 
-![Container app 3]()
+![Container app 3](imgs\Container_app3.png)
+
+4. Na página inicial do seu recurso, selecione **URL do aplicativo**
+
+![Url do app](imgs\url_app.png)
+
+
+Aplicação implementada com êxito.
+
+![Chatbot GPT](imgs\Gpt_streamlit.png)
+
