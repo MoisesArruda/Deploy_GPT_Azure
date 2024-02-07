@@ -1,12 +1,12 @@
 <h1 align="center"> Fazendo deploy da sua solução GPT na Azure. </h1>
 Este repositório tem o objetivo de compartilhar a implementação de uma solução utilizando um modelo de LLM na cloud Azure.
-Como forma de representação, pode utilizar o link abaixo para acessar o repositório que contém uma solução para realizar os passos a seguir.
+Como forma de representação, pode utilizar o link abaixo para acessar o repositório que contém uma solução para realizar os passos seguintes.
 
-[Acesso aqui o repositório 📁](https://github.com/MoisesArruda/GPT_Streamlit_FAISS)
+[Acesso aqui o repositório. 📁](https://github.com/MoisesArruda/GPT_Streamlit_FAISS)
 
 ## DockerFile
 
-Faça a criação e e configuração do seu Dockerfile para que seja possível criar sua imagem e executar seu container.
+Faça a criação e a configuração do seu Dockerfile para que seja possível criar sua imagem e executar seu container.
 
 ![DockerFile](https://github.com/MoisesArruda/Deploy_GPT_Azure/assets/107249412/36d732dc-5ea8-44ef-8a84-d0120001b2f7)
 
@@ -24,9 +24,9 @@ Para visualizar se sua imagem foi criada corretamente:
 
 ## Rodando o container docker.
 
-Rode o container para verificar se está como o esperado:
+Rode o container para verificar se está funcionando como o esperado:
 
-'''docker run -it chatbot_gpt'''
+```docker run -it chatbot_gpt```
 
 ## Instalação do AZURE CLI
 
@@ -46,17 +46,17 @@ Com o recurso já criado e em sua tela inicial, vamos copiar o **servidor de log
 
 ![Servidor logon]()
 
-Retorne ao prompt de comando para realizar o login com a azure localmente com a ajuda do Azure CLI instalado anteriormente. Coloque o nome da sua imagem e o Logon server.
+Retorne ao prompt de comando para realizar a conexão com a azure com a ajuda do Azure CLI instalado anteriormente. Coloque o nome da sua imagem e o Logon server.
 
-'''docker tag *NomeSUAImagem* *LogonServer*/*NomeSUAImagem*:latest'''
+```docker tag *NomeSUAImagem* *LogonServer*/*NomeSUAImagem*:latest```
 
 Para visualizar a nova imagem criada.
 
-'''docker images''' 
+```docker images``` 
 
 Realizar login na Azure com a ajuda do Azure CLI instalado anteriormente.
 
-'''docker login *LogonServer*'''
+```docker login *LogonServer*```
 
 Após isso ele vai pedir o usuário e a senha, essas informações podem ser obtidas indo em **Chaves de acesso**.
 
@@ -64,7 +64,7 @@ Após isso ele vai pedir o usuário e a senha, essas informações podem ser obt
 
 Enviar sua imagem para a cloud Azure.
 
-'''docker push *NomeNOVAImagem*:latest'''
+```docker push *NomeNOVAImagem*:latest```
 
 Procure por **Repositórios** e verifique se sua imagem está lá.
 
