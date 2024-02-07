@@ -46,15 +46,15 @@ Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de log
 
 - Retorne ao prompt de comando para realizar a conexão com a azure com a ajuda do Azure CLI instalado anteriormente. Coloque o nome da imagem e o Logon server.
 
-```docker tag *NomeSUAImagem* *LogonServer*/*NomeSUAImagem*:latest```
+```docker tag NomeSUAImagem LogonServer/NomeSUAImagem:latest```
 
 - Para visualizar a nova imagem criada.
 
 ```docker images``` 
 
-- Realizar login na Azure com a ajuda do Azure CLI instalado anteriormente.
+- Realizar login na Azure com a ajuda do Azure CLI instalado anteriormente, cole o Logon serve novamente.
 
-```docker login *LogonServer*```
+```docker login LogonServer```
 
 - Após isso irá solicitar o usuário e a senha, essas informações podem ser obtidas indo em **Chaves de acesso**.
 
@@ -62,7 +62,7 @@ Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de log
 
 - Enviar a imagem para a cloud Azure.
 
-```docker push *NomeNOVAImagem*:latest```
+```docker push NomeNOVAImagem:latest```
 
 - Procure por **Repositórios** e verifique se sua imagem está lá.
 
@@ -78,7 +78,7 @@ As seguintes configurações são necessárias para a criação correta do recur
 - Desmarcar **Usar imagem de início rápido**
 - Preencher os seguintes campos de **Detalhes do contêiner**
   
-![Container app ](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app.pngg)
+![Container app ](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app.png)
 
 2. Página de **Entrada**
 
