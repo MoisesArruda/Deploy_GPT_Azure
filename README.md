@@ -8,7 +8,7 @@ Como forma de representação, pode utilizar o link abaixo para acessar o reposi
 
 Crie e configure o Dockerfile para que seja possível criar a imagem e executar o container.
 
-![DockerFile](imgs\DockerFile.png)
+![DockerFile]([imgs\DockerFile.png](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app.png))
 
 ## Criando sua imagem docker.
 
