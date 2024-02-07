@@ -94,7 +94,7 @@ As seguintes configurações são necessárias para a criação correta do recur
   
 ![Container app ](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app.png)
 
-2. Página de **Entrada**
+1. Página de **Entrada**
 
 - Habilitar **Ingresso**
 - Selecionar **Aceitando tráfego de qualquer lugar**
@@ -102,11 +102,11 @@ As seguintes configurações são necessárias para a criação correta do recur
 
 ![Container app ](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app2.png)
 
-3.   Recurso criado.
+1.   Recurso criado.
 
 ![Container app 3](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_app3.png)
 
-4. Na página inicial do seu recurso, selecione **URL do aplicativo**
+1. Na página inicial do seu recurso, selecione **URL do aplicativo**
 
 ![Url do app](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/url_app.png)
 
