@@ -29,7 +29,13 @@ docker images
 Rode o container para verificar se está funcionando como o esperado:
 
 ```bash
-docker run -it chatbot_gpt
+docker run -d -p 8000:8501
+```
+
+Abra uma aba no seu navegador de prefêrencia, e cole a seguinte URL para acessar a aplicação
+
+```bash
+localhost:8000
 ```
 
 ## Instalação do AZURE CLI
