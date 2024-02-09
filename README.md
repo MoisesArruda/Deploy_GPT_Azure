@@ -17,7 +17,7 @@ No terminal de comando realize as seguintes operações para criar a imagem:
 ```bash
 docker build -t chatbot_gpt .
 ```
-![Build image](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/build image.png)
+![Build image](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/build%20image.png)
 
 
 Para visualizar se a imagem foi criada corretamente:
@@ -26,7 +26,7 @@ Para visualizar se a imagem foi criada corretamente:
 docker images
 ```
 
-![Docker images](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/docker images.png)
+![Docker images](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/docker%20images.png)
 
 ## Rodando o container docker.
 
