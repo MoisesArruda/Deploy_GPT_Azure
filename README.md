@@ -2,7 +2,7 @@
 Este repositório tem o objetivo de compartilhar a implementação de uma solução utilizando um modelo de LLM na cloud Azure.
 Como forma de representação, pode utilizar o link abaixo para acessar o repositório que contém uma solução desenvolvida para realizar os passos seguintes.
 
-[Acesso aqui o repositório. 📁](https://github.com/MoisesArruda/GPT_Streamlit_FAISS)
+[Acesse aqui o repositório. 📁](https://github.com/MoisesArruda/GPT_Streamlit_FAISS)
 
 ## DockerFile
 
@@ -15,8 +15,10 @@ Crie e configure o Dockerfile para que seja possível criar a imagem e executar 
 No terminal de comando realize as seguintes operações para criar a imagem:
 
 ```bash
-docker build -t chatbot_gpt
+docker build -t chatbot_gpt .
 ```
+![Build image](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/build image.png)
+
 
 Para visualizar se a imagem foi criada corretamente:
 
@@ -24,12 +26,14 @@ Para visualizar se a imagem foi criada corretamente:
 docker images
 ```
 
+![Docker images](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/docker images.png)
+
 ## Rodando o container docker.
 
 Rode o container para verificar se está funcionando como o esperado:
 
 ```bash
-docker run -d -p 8000:8501
+docker run -d -p 8000:8501 chatbot_gpt 
 ```
 
 Abra uma aba no seu navegador de prefêrencia, e cole a seguinte URL para acessar a aplicação
@@ -50,6 +54,7 @@ Faça a criação do recurso de Registro de Container na Azure, a configuração
 
 ![Container Registry](https://github.com/MoisesArruda/Deploy_GPT_Azure/blob/main/imgs/Container_registry.png)
 
+
 ## Registrar sua imagem
 
 Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de logon** para utilizar futuramente.
@@ -59,7 +64,7 @@ Com o recurso já criado e em sua tela inicial, vamos copiar o **Servidor de log
 - Retorne ao prompt de comando para realizar a conexão com a azure com a ajuda do Azure CLI instalado anteriormente. Coloque o nome da imagem e o Logon server.
 
 ```bash
-docker tag NomeSUAImagem LogonServer/NomeSUAImagem:latest
+docker tag chatbot_gpt LogonServer/chatbot_gpt:latest
 ```
 
 - Para visualizar a nova imagem criada.
@@ -68,7 +73,7 @@ docker tag NomeSUAImagem LogonServer/NomeSUAImagem:latest
 docker images
 ``` 
 
-- Realizar login na Azure com a ajuda do Azure CLI instalado anteriormente, cole o Logon serve novamente.
+- Realizar login na Azure com a ajuda do Azure CLI instalado anteriormente, apague o **LogonServer** e cole o Logon server novamente.
 
 ```bash
 docker login LogonServer
