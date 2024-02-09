@@ -1,8 +1,8 @@
 <h1 align="center"> Fazendo deploy da sua solução GPT na Azure. </h1>
-Este repositório tem o objetivo de compartilhar a implementação de uma solução utilizando um modelo de LLM na cloud Azure.
-Como forma de representação, pode utilizar o link abaixo para acessar o repositório que contém uma solução desenvolvida para realizar os passos seguintes.
+Este repositório tem o objetivo de compartilhar a implementação de uma solução de um agente conversacional utilizando a API da OpenAI na cloud Azure.
+O link abaixo pode ser utilizado para acessar o repositório que contém uma aplicação desenvolvida para agir como assistente.
 
-[Acesse aqui o repositório. 📁](https://github.com/MoisesArruda/GPT_Streamlit_FAISS)
+Acesse aqui o repositório. 📁](https://github.com/MoisesArruda/GPT_Streamlit_FAISS)
 
 ## DockerFile
 
